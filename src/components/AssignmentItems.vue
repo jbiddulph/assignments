@@ -1,13 +1,13 @@
 <template>
   <section class="space-y-6">
-    <assignment-list
+    <AssignmentList
       :assignments="filters.inProgress"
       title="In Progress"
-    ></assignment-list>
-    <assignment-list
+    ></AssignmentList>
+    <AssignmentList
       :assignments="filters.completed"
       title="Completed Assignments"
-    ></assignment-list>
+    ></AssignmentList>
     <form @submit.prevent="add">
       <div class="border border-gray-600 text-black">
         <input
